@@ -16,13 +16,103 @@
   /* overflow-y: auto; Kui sisu on pikem */
 }
 
+/* Sidebar.css või App.css */
+
 .sidebar {
-  width: 250px;
-  flex-shrink: 0;
+  /* olemasolevad .sidebar stiilid (width, padding, border, background, flex-shrink) */
+  display: flex; /* Aitab sisu vertikaalselt joondada ja hallata */
+  flex-direction: column; /* Elemendid üksteise all */
+}
+
+.sidebar section { /* Üldine stiil sektsioonidele külgribas */
+  margin-bottom: 1.5rem;
+}
+.sidebar section:last-child {
+  margin-bottom: 0;
+}
+
+.stats-section h4,
+.user-section h3 { /* Pealkirjade stiilid */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.stats-section p {
+  margin: 0.25rem 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.user-avatar {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.user-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ddd; /* Väike ääris avatarile */
+}
+
+.user-avatar p {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1em;
+}
+
+.user-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.user-menu a {
+  text-decoration: none;
+  color: #007bff; /* Või sinu teemavärv */
+  display: block; /* Et link võtaks terve rea laiuse */
+  padding: 0.25rem 0;
+}
+
+.user-menu a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.login-prompt {
+  margin-top: 1.5rem;
+  text-align: center;
   padding: 1rem;
-  border-left: 1px solid #ccc;
-  background-color: #f9f9f9;
-  /* overflow-y: auto; Kui sisu on pikem */
+  background-color: #e9ecef; /* Helehall taust */
+  border-radius: 4px;
+}
+.login-prompt p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+.login-prompt button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login-prompt button:hover {
+  background-color: #0056b3;
+}
+
+.future-content {
+  margin-top: auto; /* Lükkab selle sektsiooni külgriba lõppu, kui külgribal on display:flex ja flex-direction:column */
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  color: #777;
+  font-size: 0.85em;
 }
 
 /* Mobiilivaade */
