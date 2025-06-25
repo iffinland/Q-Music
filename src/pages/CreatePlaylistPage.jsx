@@ -16,7 +16,7 @@ function CreatePlaylistPage() {
           <input type="text" id="playlistdescriptions" name="PlaylistDescriptions" />
         </div>
         <div>
-          <label htmlFor="PlaylistImage">Image for Playlist:</label>
+          <label htmlFor="PlaylistImage">Playlist image:</label>
           <input type="file" id="playlistimage" name="PlaylistImage" accept="image/*" />
         </div>
         <button type="submit">Create NEW playlist</button>
