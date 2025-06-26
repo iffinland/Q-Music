@@ -248,6 +248,7 @@
   }
 
   .header-main-row {
+    display: flex;
     /* Võib-olla flex-direction: column ja align-items: center, kui logo ja login nupp ei mahu kõrvuti */
   }
 
