@@ -27,6 +27,8 @@ function AppContent() {
     setSongs(initialMockSongs);
   }, []);
 
+  
+
   // Handlerid lisame järgmises sammus, aga defineerime need tühjadena, et propsid ei annaks viga
   const handleSelectSong = (song) => { console.log("handleSelectSong kutsutud", song); setSelectedSong(song); };
   const actualSearchHandler = (query) => { console.log("actualSearchHandler kutsutud", query); navigate(`/search?q=${encodeURIComponent(query)}`); };
